@@ -22,20 +22,20 @@ function Search() {
 
   return (
     <div className="search-container">
-      <h2>🎬 Search Movies</h2>
+      <h2>Search Movies</h2>
       <div className="search-box">
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Enter movie name..."
+          placeholder="Enter movie name"
         />
         <button onClick={handleSearch}>Search</button>
       </div>
 
       <div className="results-grid">
         {results.length === 0 ? (
-          <p style={{ color: "#999" }}>No results yet.</p>
+          <div></div>
         ) : (
           results.map((movie) => (
             <div className="movie-card" key={movie.id}>

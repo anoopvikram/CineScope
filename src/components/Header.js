@@ -10,7 +10,7 @@ function Header() {
         <div><Link to="/">CineScope.</Link></div>
       </div>
       <nav>
-        <Link to="/">Home</Link>
+        <Link className="home-button" to="/">Home</Link>
         <Link to="/search">Search</Link>
       </nav>
     </header>
