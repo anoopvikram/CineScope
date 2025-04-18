@@ -35,6 +35,7 @@ function Home() {
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
+      <footer><p>&copy; 2025 Made by Anoop Vikram. All rights reserved.</p></footer>
     </div>
   );
 }

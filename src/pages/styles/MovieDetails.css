@@ -3,24 +3,39 @@
     flex-wrap: wrap;
     gap: 2rem;
     /* margin-top: 2rem; */
+    text-align: left;
   }
   
   .poster {
     width: 300px;
     height: 450px; /* consistent height for all posters */
     object-fit: cover; /* this keeps the image nicely cropped */
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* optional glow */
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 18px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.653); /* optional glow */
+    margin-top: 50px;
   }
   
   .info {
-    font-size: 1.2rem;
-    flex: 1;
-    min-width: 300px;
+    font-size: 1.8rem;
+    min-width: 100px;
+    width: 50%;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+  }
+  @media(max-width:768px){
+    .info{
+      width: 100%;
+    }
+  }
+
+  .info strong{
+    color: #f5f5f5;
   }
   
   .info h1 {
     color: #ffcc00;
+    text-shadow: 4px 4px 5px black;
   }
   
   .info p {

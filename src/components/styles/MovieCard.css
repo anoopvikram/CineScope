@@ -1,19 +1,20 @@
 .movie-card {
     background-color: #1c1c1c;
-    border-radius: 12px;
+    border-radius: 18px;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    width: 200px;
+    width: 300px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    border: 2px solid rgb(57, 57, 57);
   }
   
   .movie-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 20px rgba(255, 204, 0, 0.3);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgb(54, 54, 54);
   }
   
   .movie-card img {

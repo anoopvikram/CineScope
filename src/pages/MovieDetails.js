@@ -8,6 +8,10 @@ function MovieDetails() {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
     axios
       .get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
@@ -15,7 +19,15 @@ function MovieDetails() {
       .catch((err) => console.error(err));
   }, [id]);
 
-  if (!movie) return <p style={{ padding: "2rem" }}>Loading...</p>;
+  if (!movie) return <div 
+  style={{ 
+    width: "100vw", 
+    height: "100vh", 
+    padding: "2rem", 
+    backgroundColor: "#121212" 
+  }}>
+    <p style={{color:"white"}}>Loading..</p>
+  </div>;
 
   return (
     <div className="container movie-detail">

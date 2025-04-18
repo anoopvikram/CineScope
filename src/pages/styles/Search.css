@@ -1,5 +1,5 @@
 .search-container {
-    background-color: #1e1e1e;
+    background-color: #121212;
     padding: 2rem;
     text-align: center;
     max-width: 100%;
@@ -15,7 +15,7 @@
   .search-box {
     display: flex;
     justify-content: center;
-
+    margin-bottom: 100px;
   }
   
   .search-box input { 
@@ -41,9 +41,8 @@
     color: white;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
-    transition: background 0.3s;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.681);
-    
+    transition: all 0.3s ease-in-out;
   }
   
   .search-box button:hover {
@@ -52,36 +51,24 @@
   }
   
   .results-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 2.5rem;
-    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
   }
   
-  .movie-card {
-    background: #1e1e1e;
+  .before-search{
     color: white;
-    padding: 10px;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
   }
-  
-  .movie-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .movie-card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
+
   .no-image {
-    height: 270px;
-    background: #555;
+    height: 400px;
+    width: 300px;
+    background: #1c1c1c;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 18px;
   }
   

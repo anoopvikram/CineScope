@@ -10,7 +10,7 @@ const featuredTitles = [
   "Interstellar",
   "The Pursuit of Happyness",
   "Empuraan",
-  "KGF"
+  "KGF 2"
 ];
 
 function LandingPage() {
