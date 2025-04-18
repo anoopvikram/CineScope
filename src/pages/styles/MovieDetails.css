@@ -1,0 +1,30 @@
+.movie-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* margin-top: 2rem; */
+  }
+  
+  .poster {
+    width: 300px;
+    height: 450px; /* consistent height for all posters */
+    object-fit: cover; /* this keeps the image nicely cropped */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* optional glow */
+  }
+  
+  .info {
+    font-size: 1.2rem;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .info h1 {
+    color: #ffcc00;
+  }
+  
+  .info p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  

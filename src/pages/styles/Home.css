@@ -1,0 +1,27 @@
+.container {
+    padding: 2rem;
+    background-color: #121212;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  h2 {
+    color: #ffcc00;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .sub-head {
+    margin: 2% 13% ;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  

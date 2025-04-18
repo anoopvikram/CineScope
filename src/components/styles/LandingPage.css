@@ -1,0 +1,40 @@
+.landing-movie-card {
+    text-decoration: none;
+    width: 20%;
+    height: 500px;
+    transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out ;
+    border-radius: 10px;
+}
+  
+  .landing-movie-card:hover {
+    height: 500px;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+ 
+  }
+  
+  .landing-movie-card .img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+   
+   
+  }
+  .containers {
+    margin: 1% 25%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    overflow: visible;
+    height: 500px;  /* ✅ matches image height */
+  }
+  
+  
+  @media(max-width:900px){
+    .containers{
+      display: none;
+    }
+  }
